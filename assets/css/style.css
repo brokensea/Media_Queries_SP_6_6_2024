@@ -1,0 +1,411 @@
+BASIC STYLING
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(70, 69, 69, 0.828);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrapper {
+  padding: 0 2vw;
+}
+
+/* fanget an Handy*/
+.hauptContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+
+
+.headerBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.headerBoxArtileandBackground{
+  display: none;
+}
+
+
+.dog {
+  background-image: url("../img/background/dog.jpg");
+  height: 50vh;
+  width: 100vw;
+  background-size: contain; /* or cover */
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  top: 0%;
+  display: flex;
+}
+
+.headerBox_TableLabtop{
+  width: 100vw;
+  position: relative;
+}
+
+.title1{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.headerBoxArtileandBackground_TableLabtop{
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform: translate(-50%, -50%); 
+  width: 40vw;
+  text-align: right;
+
+  font-family: Nunito;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 21.82px;
+  text-align: right;
+  color:#DF8480;
+
+}
+
+/* main */
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.howIt{ 
+  height: 10vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  z-index: 0;
+  background-color: #DF8480;
+}
+.howIt p{
+  font-family: Nunito;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 21.82px;
+  color: white;
+}
+
+.numberAndP{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.numberAndPContainer{
+ background-color: white;
+}
+.numberAndPContainer p {
+  font-family: Nunito;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 21.82px;
+  text-align: center;
+}
+.numberAndPContainer p span{
+  font-family: Nunito;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 65.47px;
+  text-align: center;
+  display: block;
+  color: #DF8480;
+
+}
+
+
+.What{
+    background: #DF8480;
+    height: 10vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.What p{
+  font-family: Nunito;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 21.82px;
+  color: white;
+}
+
+.bildContainer{
+  display: flex;
+  flex-direction: column;
+}
+.img1{
+  background-image: url("../img/bild/1.png");
+  width: 100vw;
+  height: 60vw;
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+  
+
+}
+.img2{
+  background-image: url("../img/bild/2.png");
+  width: 100vw;
+  height: 60vw;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.BildContainerArtikel p{
+  font-family: Nunito;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 21.82px;
+  text-align: center;
+
+}
+
+
+/* footer */
+.footerContainer{
+  background-color:#242424;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons{
+  flex-direction: column;
+  text-align: center;
+}
+.buttonGeneral:nth-last-of-type(1){
+  background-color: #DF8480;
+}
+
+.buttonGeneral{
+  width: 80vw;
+  height: 5vh;
+  gap: 0px;
+  border-radius: 20px 20px 20px 20px;
+  opacity: 0px;
+}
+
+.lastLine{
+  display: flex;
+  
+}
+.iconBox{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 5%;
+  }
+.icon1{
+  background-image: url("../img/icons/1.png");
+  width: 15vw;
+  height: 10vh;
+  background-repeat: no-repeat;
+}
+.icon2{
+  background-image: url("../img/icons/2.png");
+  width: 15vw;
+  height: 10vh;
+  background-repeat: no-repeat;
+}
+.icon3{
+  background-image: url("../img/icons/3.png");
+  width: 15vw;
+  height: 10vh;
+  background-repeat: no-repeat;
+}
+
+.footerContainer div p{ 
+  font-family: Nunito;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 21.82px;
+  text-align: center;
+  color:#FFFFFF;
+  margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+/* ! Tablet */
+@media only screen and (min-width: 601px) {
+  .dog{
+    width: 100vw;
+    background-size: cover;
+    height: 80vh;
+  }
+
+  .headerBoxArtileandBackground_TableLabtop{
+    top: 20%;
+  }
+  .numberAndPContainer p {
+    text-align: left;
+    margin-left: 5%;
+  }
+  .numberAndPContainer p span{
+    display: inline;
+  
+  }
+  .iconBox{
+  justify-content: left;
+  }
+ 
+  #lastLine p {
+    text-align: right; /* 确保对 p 元素生效 */
+  }
+}
+
+/* ! Desktop */
+
+@media only screen and (min-width: 901px) {
+
+  .headerBox{
+    display: block;
+    width: 100vw;
+    height: 20vh;
+    background-color: white
+  }
+  .title1 p{   font-family: Rock Salt;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 57.26px;
+    text-align: center;
+  }
+
+  .headerBoxArtileandBackground{
+    display: flex;
+    width: 50vw;
+    height: 80vh;
+    background-color:  #DF8480;
+    
+    position: absolute;
+    top:21vh;
+    
+  }
+
+  .dog { 
+    width: 50vw;
+    left: 50vw;
+  }
+  .dog .headerBox_TableLabtop{
+    display: none;
+  }
+
+  .headerBoxArtileandBackground p{
+    font-family: Nunito;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 49.1px;
+    text-align: right;
+    color: white;
+    width: 20vw;
+    margin-left: 50%;
+  }
+
+  .howIt{ 
+    background: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .howIt p{
+    font-family: Nunito;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 65.47px;
+    text-align: center;
+
+    color:#DF8480;
+  }
+
+  .numberAndPContainer p span{
+    display: block;
+  }
+  .numberAndPContainer p {
+    text-align: center;
+  }
+  .numberAndP{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self:center;
+  }
+  .numberAndPContainer{
+    width: 20vw;
+  }
+
+  .What{ 
+    background: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .What p{
+    font-family: Nunito;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 65.47px;
+    text-align: center;
+
+    color:#DF8480;
+  }
+  
+  .bildContainer{
+    display: flex;
+    flex-direction: row;
+  }
+  .img1{
+    width: 30vw;
+    height: 30vw;
+  }
+  .img2{
+    width: 30vw;
+    height: 30vw;
+  }
+  .BildContainerArtikel{
+    width: 30vw;
+    height: 30vw;
+    background-color: #DF8480;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .BildContainerArtikel p{
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+  }
+
+   
+  
+}
